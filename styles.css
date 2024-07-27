@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+     /* Header background color */
+    color: #fff;
+    
+}
+h1{
+    background:black;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.logo img {
+    max-height: 80px; /* Size of the logo */
+    width: auto;
+}
+
+.header-image img {
+    max-height: 300px; /* Size of the additional image */
+    width: auto;
+    margin-top: 10px; 
+    align-content: center;
+    /* Space between the two images */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.hero {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+    gap: 20px; /* Space between team members */
+}
+
+.team-member {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust percentage for 3 members per row with space */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes images circular */
+    max-width: 150px; /* Set a maximum width for images */
+    margin-bottom: 10px;
+}
+
+.accordion {
+    margin-top: 1rem;
+}
+
+.accordion-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-button.active + .accordion-content {
+    max-height: 200px; /* Adjust as needed */
+    padding: 1rem;
+}
+
+.accordion-content p, .accordion-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-content ul {
+    list-style-type: none;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+}
+
+.accordion-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.accordion-content a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
